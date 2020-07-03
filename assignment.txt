@@ -1,0 +1,21 @@
+create table employee
+(
+empid number,
+empname varchar(12),
+empadd varchar(20),
+empdob date,
+empdoj date,
+empsalary number
+)
+
+insert into employee values(1,'abc','hyderabad','10/19/1998','04/20/2020',25000)
+
+insert into employee values(2,'abd','hyderabad','07/13/1998','04/07/2020',25000)
+
+insert into employee values(3,'aec','bangalore','09/17/1998','08/19/2019',25000)
+
+insert into employee values(4,'nik','chennai','05/19/1997','03/30/2020',30000)
+
+insert into employee values(5,'vic','chennai','11/26/1996','07/15/2018',50000)
+
+select * from employee
