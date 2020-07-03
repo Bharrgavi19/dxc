@@ -6,3 +6,5 @@ employeeaddress varchar2(20) constraint chkempadd check(employeeaddress  not in 
 salary number constraint chkempsal check(salary between 20000 and 30000),
 companyadd varchar2(20) default 'ASV Suntech Park'
 )
+
+insert into employee values(1,'bharu','chennai',25000,'ASV Suntech park')
