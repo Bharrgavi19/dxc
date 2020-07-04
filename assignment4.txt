@@ -1,0 +1,11 @@
+alter table stu add email varchar2(15)
+
+alter table stu modify email varchar2(30)
+
+alter table stu add constraint unq unique(email)
+
+alter table fees add constraint chkfee check(fee between 1000 and 10000)
+
+insert into stu values(1,'bharu','bharrgavi19@gmail.com')
+
+select * from stu
