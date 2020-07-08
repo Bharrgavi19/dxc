@@ -1,0 +1,97 @@
+import java.util.Scanner;
+
+public class passenger 
+{
+
+
+	  String pnrnumber;
+
+	  String passengername;
+
+	  String journey_date;
+
+	  String source;
+
+	  String destination;
+
+	  Scanner sc = new Scanner(System.in);
+
+	  public void start() 
+	  {
+
+		   System.out.println("passenger started : "+passengername);
+
+
+	  }
+
+
+	   public void stop()
+ 	  {
+		   
+	   	   System.out.println("passenger stopped : "+passengername);
+
+	  }
+
+	   
+
+	   
+	  public void passengerdetails() 
+	  {
+		   
+		   
+		   System.out.println("\n++++++++++++++PASSENGER DETAILS++++++++++++++");
+
+		   System.out.println("\npassengername : "+passengername);
+
+		   System.out.println("\npnrnumber : "+pnrnumber);
+
+		   System.out.println("journey_date : "+journey_date);
+
+		   System.out.println("source : "+source);
+
+		   System.out.println("destination : "+destination);
+
+	  }
+	   
+	   
+	  public void acceptpassengerdetails() 
+	 {
+		   
+   	           System.out.println("pnrnumber: ");
+
+		   pnrnumber =sc.next();
+
+		   System.out.println("passengername: ");
+
+		   passengername = sc.next();
+
+		   System.out.println("journey_date:");
+
+		   journey_date = sc.next();
+
+		   System.out.println("source: ");
+
+		   source = sc.next();
+	
+	           System.out.println("destination ");
+	
+	           destination = sc.next();
+	
+	  }
+
+	  public static void main(String[] args) 
+	  {
+
+		passenger p = new passenger();
+
+		p.acceptpassengerdetails();
+
+		p.start();
+
+		p.stop();
+
+		p.passengerdetails();
+
+	
+	  }
+}
