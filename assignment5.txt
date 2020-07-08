@@ -1,0 +1,100 @@
+public class variabledemo
+{
+ 
+    byte roll;
+
+    short salary;
+
+    int grade;
+
+    long budget;
+ 
+    float marks;
+ 
+    char alphabet;
+
+    double amount;
+
+    boolean married;
+
+    public void display()
+ 
+    {
+         
+        System.out.println("default value for byte is:"+roll);
+
+        System.out.println("default value for short is:"+salary);
+
+        System.out.println("default value for int is:"+grade);
+
+        System.out.println("default value for long is:"+budget);
+ 
+        System.out.println("default value for float is:"+marks);
+ 
+        System.out.println("default value for char is:"+alphabet);
+ 
+        System.out.println("default value for double is:"+amount);
+ 
+        System.out.println("default value for boolean is:"+married);
+
+ 
+      }
+ 
+   public static void main(String args[])
+
+   {
+ 
+       variabledemo a= new variabledemo();
+
+        a.display();
+
+    }
+
+}
+
+============================================================================
+
+
+public class variabledemo
+{
+
+    byte roll=127;
+
+    short salary=200;
+
+    int grade=20000;
+
+    long budget=8928;
+
+    float marks=9.6f;
+
+    char alphabet='J';
+
+    double amount=987.67d;
+
+    boolean married=true;
+
+    String name="bharu";
+
+    public void display()
+
+    {
+         
+	System.out.println("default value for byte is:"+roll);
+
+         System.out.println("default value for short is:"+salary);
+
+         System.out.println("My name is:"+name);
+
+     }
+
+    public static void main(String args[])
+
+    {
+        
+	variabledemo a= new variabledemo();
+
+        a.display();
+  
+    }  
+}
