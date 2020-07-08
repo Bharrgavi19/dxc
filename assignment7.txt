@@ -16,21 +16,16 @@ public class passenger
 
 	  Scanner sc = new Scanner(System.in);
 
-	  public void start() 
-	  {
+	  public void ticketbooked() {
+		   System.out.println("ticket booked : "+pnrnumber);
+	   }
 
-		   System.out.println("passenger started : "+passengername);
-
-
-	  }
-
-
-	   public void stop()
- 	  {
-		   
-	   	   System.out.println("passenger stopped : "+passengername);
-
-	  }
+	   public void cancelticket() {
+		   System.out.println("ticket cancelled : "+pnrnumber);
+	   }
+	   public void modifyticket(){
+	       System.out.println("ticket modified : "+pnrnumber);
+	   }
 
 	   
 
@@ -86,9 +81,9 @@ public class passenger
 
 		p.acceptpassengerdetails();
 
-		p.start();
-
-		p.stop();
+		p.ticketbooked();
+		p.cancelticket();
+		p.modifyticket();
 
 		p.passengerdetails();
 
