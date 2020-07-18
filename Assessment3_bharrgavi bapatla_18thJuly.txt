@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>USER FORM</title>
+<script type="text/javascript">
+function viewUserdetails()
+{
+	
+		var uname = document.forms[0].elements[0].value;
+		var errUserName = document.getElementById("errUserName");
+		var errGender = document.getElementById("errGender");
+		var errComments = document.getElementById("errComments");
+		
+		
+		
+		if(uname.length == 0)
+		{
+			errUserName.innerHTML = "Name should not be empty";
+	        
+		}
+		else if(uname.length != 0)
+		{
+			
+			errUserName.innerHTML = "Name : " + uname;
+		}
+	
+	with (document.forms[0])
+	{
+		if(gender[0].checked||gender[1].checked)
+		{
+			var gen=gender[0].checked?gender[0].value:gender[1].value;
+			errGender.innerHTML = "Your Gender is : " + gen;
+	        
+		}
+		else
+		{
+			
+			errGender.innerHTML = "Please select the Gender";
+		}
+	
+		if(comments[0].checked||comments[1].checked)
+		{
+			var comment=comments[0].checked?comments[0].value:comments[1].value;
+			errComments.innerHTML = "Your Comment is : " + comment;
+	        
+		}
+		else
+		{
+			
+			errComments.innerHTML = "Please select the Comment";
+		}
+	}
+}
+</script>
+</head>
+<body>
+	<center>
+		<h1>
+			<font color="black">User Form</font>
+		</h1>
+	</center>
+	<form>
+		<table border="3" bordercolorlight="grey" bordercolordark="black"
+		align="center" bgcolor="yellow" cellspacing="2" cellpadding="2">
+			<tr border="2" bordercolorlight="black" bordercolordark="grey">
+				<td>User Name :</td>
+				<td><input type="text" id="userName"></td>
+			</tr>
+			<tr border="2" bordercolorlight="black" bordercolordark="grey">
+				<td>Spouse Name :</td>
+				<td><input type="text" id="spouseName"></td>
+			</tr>
+			<tr border="2" bordercolorlight="black" bordercolordark="grey">
+				<td>Gender :</td>
+				<td><input type="radio" name="gender" id="Male" value="Male">Male
+					<br /> <input type="radio" name="gender" id="Female" value="Female">Female
+				</td>
+			</tr>
+			<tr border="2" bordercolorlight="black" bordercolordark="grey">
+				<td>Comments :</td>
+				<td><input type="radio" name="comments" id="Like" value="Like">Like
+					<br /> <input type="radio" name="comments" id="Don't Like"
+					value="Don't Like">Don't Like</td>
+			</tr>
+			<tr border="2" bordercolorlight="black" bordercolordark="grey">
+				<td colspan="2" align="center"><input type="button" 
+					value="Submit" onclick="viewUserdetails()"></td>
+			</tr>
+			<tr border="2" bordercolorlight="black" bordercolordark="grey">
+				<td colspan="2"><span id=errUserName></span></td>
+			</tr>
+			<tr border="2" bordercolorlight="black" bordercolordark="grey">
+				<td colspan="2"><span id=errGender></span></td>
+			</tr>
+			<tr border="2" bordercolorlight="black" bordercolordark="grey">
+				<td colspan="2"><span id=errComments></span></td>
+			</tr>
+			
+		</table>
+
+	</form>
+
+</body>
+</html>
